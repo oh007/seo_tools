@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rank Checker
+
+This project is a simple web application built with Next.js and Tailwind CSS that allows users to check the ranking of a website for a specific keyword using the Google Custom Search JSON API.
+
+## Features
+
+- Check the ranking of a website for a given keyword.
+- Displays the ranking in a user-friendly interface.
+- Shows a loading spinner while fetching data from the API.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (v12 or higher)
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    ```sh
+    git clone https://github.com/your-username/rank-checker.git
+    cd rank-checker
+    ```
 
-## Learn More
+2. Install the dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Create a `.env.local` file in the root directory and add your Google Custom Search API key and Search Engine ID:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```sh
+    NEXT_PUBLIC_API_KEY=your_api_key
+    NEXT_PUBLIC_SEARCH_ENGINE_ID=your_search_engine_id
+    ```
 
-## Deploy on Vercel
+    Replace `your_api_key` with your actual API key and `your_search_engine_id` with your actual Search Engine ID.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### How to Obtain an API Key and Search Engine ID
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Get a Google Custom Search API Key:**
+    - Go to the [Google Cloud Console](https://console.cloud.google.com/).
+    - Create a new project or select an existing project.
+    - Go to the **APIs & Services** > **Credentials**.
+    - Click on **Create Credentials** and select **API Key**.
+    - Copy the generated API key.
+
+    For detailed instructions, refer to [Google's documentation](https://developers.google.com/custom-search/v1/introduction#identify_your_application_to_google_with_api_key).
+
+2. **Get a Google Custom Search Engine ID:**
+    - Go to the [Custom Search Engine](https://cse.google.com/cse/all) page.
+    - Click on **Add** to create a new search engine.
+    - Enter your site URL(s) in the **Sites to search** field.
+    - Once created, go to the **Control Panel** of your search engine.
+    - Copy the **Search engine ID**.
+
+    For detailed instructions, refer to [Google's documentation](https://developers.google.com/custom-search/docs/tutorial/creatingcse).
+
+### Running the Application
+
+1. Start the development server:
+
+    ```sh
+    npm run dev
+    # or
+    yarn dev
+    ```
+
+2. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Usage
+
+1. Enter the website URL you want to check (e.g., `https://www.example.com`).
+2. Enter the keyword you want to check the ranking for.
+3. Click on the **Check Ranking** button.
+4. The ranking result will be displayed below the form.
+
+## Styling
+
+The application uses Tailwind CSS for styling. The global styles and custom loader animation are defined in the `styles/globals.css` file.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
