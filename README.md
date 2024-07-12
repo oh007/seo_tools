@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/47d6f68d-d137-48b9-b964-2e1e73c2ce5a)
+![image](https://github.com/user-attachments/assets/a84164b5-e761-49f1-9eca-94b03370db09)
 
 
 # Rank Checker
