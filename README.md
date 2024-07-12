@@ -20,7 +20,7 @@ This project is a simple web application built with Next.js and Tailwind CSS tha
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/your-username/rank-checker.git
+    git clone https://github.com/oh007/seo_tools.git
     cd rank-checker
     ```
 
