@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/47d6f68d-d137-48b9-b964-2e1e73c2ce5a)
+
+
 # Rank Checker
 
 This project is a simple web application built with Next.js and Tailwind CSS that allows users to check the ranking of a website for a specific keyword using the Google Custom Search JSON API.
